@@ -3,5 +3,5 @@ function add(a: number, b: number): number {
 }
 
 const result: number = add(5, 3);
-console.log("¡Hola, mundo!" + (result));
+console.log(`¡Hola, mundo! (result)`);
 
