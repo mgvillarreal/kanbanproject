@@ -1,17 +1,20 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "kanban project backend practice",
-  "main": "index.js",
+  "description": "Kanban Project Backend Practice",
+  "type": "module",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "dev": "tsx watch src/index.ts"
   },
   "author": "Gabriela Villarreal",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }
