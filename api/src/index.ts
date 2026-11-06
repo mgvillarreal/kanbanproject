@@ -1,7 +1,12 @@
-function add(a: number, b: number): number {
-  return a + b;
-}
+import express, { type Express, type Request, type Response } from 'express';
 
-const result: number = add(5, 3);
-console.log(`¡Hola, mundo! ${result}`);
+const app: Express = express();
+const port = 3000;
 
+app.get('/health', (req: Request, res: Response) => {
+  res.json({status: "OK"});
+});
+
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`);
+});
